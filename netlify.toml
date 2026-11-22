@@ -1,0 +1,8 @@
+# Site static, fără build. Netlify publică direct fișierele din rădăcină.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
